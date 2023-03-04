@@ -1,0 +1,15 @@
+@my-bg: #f5f5f5;
+@my-primary: #000000;
+@my-font: #ffffff;
+@my-active: #2d8cf0;
+@my-font-gray: #999999;
+
+@min-height: 1250px;
+
+// 超出显示...
+.ellipsis(@width, @line: 1) {
+  width: @width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: @line;
+}

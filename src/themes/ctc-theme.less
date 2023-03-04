@@ -1,0 +1,28 @@
+// 币币交易
+@ctc-green: #2cbe87;
+@ctc-red: #f6475d;
+
+// light 风格
+@lightctc-bg-1: #ffffff;
+@lightctc-bg-2: #ffffff;
+@lightctc-font: #000000;
+@lightctc-font-2: rgba(0, 0, 0, 0.45);
+@lightctc-border: #e0e0e0;
+@lightctc-hover: #f2f2f2;
+@lightctc-border-2: #e0e0e0;
+@lightctc-mask-bg: rgba(255, 255, 255, 0.7);
+
+// dart 风格
+@darkctc-bg-1: #1c1c1c;
+@darkctc-bg-2: #000000;
+@darkctc-font: #bcd7e6;
+@darkctc-font-2: #999999;
+@darkctc-border: #1c1c1c;
+@darkctc-hover: #2c2c2c;
+@darkctc-border-2: #333333;
+@darkctc-mask-bg: rgba(0, 0, 0, 0.7);
+
+.parseTheme(@label, @color, @theme: '') {
+  @name: '@{theme}@{color}';
+  @{label}: @@name;
+}
